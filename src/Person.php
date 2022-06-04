@@ -3,6 +3,7 @@ declare( strict_types = 1 );
 namespace Ampliffy\Library4;
 
 use Ampliffy\Library4\Person\GenrePerson;
+use Graftak\CountryCodeHelper;
 
 class Person
 {
@@ -17,14 +18,14 @@ class Person
 		?string $surname = null, 
 		?int $age = null, 
 		?GenrePerson $gender = null, 
-		?string $country = null
+		?string $codeCountry = null
 	)
 	{
 		$this->setName($name);
 		$this->setSurname($surname);
 		$this->setAge($age);
 		$this->setGender($gender);
-		$this->setCountry($country);
+		$this->setCountry($codeCountry);
 	}
 
 	public function setName(?string $name): void
@@ -71,9 +72,9 @@ class Person
 		return $this->gender;
 	}
 	
-	public function setCountry(?string $country): void
+	public function setCountry(?string $codeCountry): void
 	{
-		$this->country = $country;
+		$this->country = CountryCodeHelper::map($codeCountry, 'ALPHA_3');
 	}
 
 	public function getCountry(): ?string

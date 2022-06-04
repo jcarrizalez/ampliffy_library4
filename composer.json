@@ -5,7 +5,8 @@
   "homepage":     "https://github.com/jcarrizalez/ampliffy_library4",
   "type":         "Library",
   "require": {
-    "php": ">= 7.4"
+    "php": ">= 7.4",
+    "graftak/country-code-helper": "^2.0"
   },
   "license":      "MIT",
   "authors": [
