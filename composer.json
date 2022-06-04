@@ -1,0 +1,22 @@
+{
+  "name":         "ampliffy/library4",
+  "description": "Test Ampliffy Library4.",
+  "keywords":     ["composer", "person", "persona", "user", "client"],
+  "homepage":     "https://github.com/jcarrizalez/ampliffy_library4",
+  "type":         "Library",
+  "require": {
+    "php": ">= 7.4"
+  },
+  "license":      "MIT",
+  "authors": [
+    {
+      "name": "Juan -Carrizalez",
+      "email": "sitgem@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ampliffy\\Library4\\": "src/"
+    }
+  }
+}
