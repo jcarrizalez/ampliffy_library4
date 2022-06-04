@@ -45,7 +45,7 @@ class Person
 
 	public function getSurname(): ?string
 	{
-		return $this->name;
+		return $this->surname;
 	}
 
 	public function setAge(?int $age): void
