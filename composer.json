@@ -2,22 +2,23 @@
   "name":         "ampliffy/library4",
   "description": "Test Ampliffy Library4.",
   "keywords":     ["composer", "person", "persona", "user", "client"],
-  "homepage":     "https://github.com/jcarrizalez/ampliffy_library4",
-  "type":         "Library",
-  "require": {
-    "php": ">= 7.4",
-    "graftak/country-code-helper": "^2.0"
-  },
-  "license":      "MIT",
+  "license": "MIT",
   "authors": [
-    {
-      "name": "Juan -Carrizalez",
-      "email": "sitgem@gmail.com"
-    }
+  {
+    "name": "Juan -Carrizalez",
+    "email": "sitgem@gmail.com"
+  }
   ],
+  "require": {
+      "php": ">= 7.4",
+      "illuminate/support": "^5.8|^6|^7|^8|^9",
+      "umpirsky/country-list": "2.0.*",
+      "graftak/country-code-helper": "^2.0"
+  },
   "autoload": {
     "psr-4": {
       "Ampliffy\\Library4\\": "src/"
     }
-  }
+  },
+  "minimum-stability": "stable",
 }
